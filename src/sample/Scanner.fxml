@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox alignment="CENTER" layoutX="225.0" layoutY="143.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label fx:id="lblscann" layoutX="225.0" layoutY="143.0" text="Barcode einscannen" />
+            <TextField fx:id="tctscann" alignment="CENTER" layoutX="225.0" layoutY="200.0" maxWidth="150.0" minWidth="100.0" prefHeight="10.0" prefWidth="150.0">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextField>
+         </children>
+      </VBox>
+      <HBox alignment="BASELINE_RIGHT" layoutX="412.0" layoutY="337.0" spacing="20.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <children>
+           <Button fx:id="btnback" layoutX="412.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleBackToMainWindowtBtnEvent" text="Zurück" />
+            <Button fx:id="btnclose" layoutX="499.0" layoutY="337.0" mnemonicParsing="false" onAction="#handleExitBtnEvent" text="Exit" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
